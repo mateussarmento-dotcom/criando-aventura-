@@ -1,1 +1,43 @@
+body {
+    background-color: #2d4b3b; /* Cor verde escura para representar a floresta */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche toda a tela */
+    margin: 0;
+}
 
+button {
+    background-color: #2E8B57; /* Verde floresta */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3CB371; /* Tom mais claro de verde no hover */
+}
+
+.passo {
+    display: none;
+    text-align: center;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+    margin-bottom: 20px;
