@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em Busca do Tesouro Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-floresta.jpg" alt="floresta misteriosa">
+            <p>Você encontra um mapa antigo em uma biblioteca. O mapa indica a localização de um tesouro perdido, escondido nas profundezas de uma floresta misteriosa. Você decide seguir as pistas.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na floresta</button>
+            <button class="btn-proximo" data-proximo="2">Procurar mais informações na cidade</button>
+        </div>
 
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-entrada-floresta.jpg" alt="entrada da floresta">
+            <p>Você entra na floresta densa e logo se depara com duas trilhas. Uma leva para um rio, e a outra parece subir a colina. Qual caminho você escolhe?</p>
+            <button class="btn-proximo" data-proximo="3">Seguir para o rio</button>
+            <button class="btn-proximo" data-proximo="4">Subir pela colina</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Você decide voltar à cidade e procurar mais informações, mas nada de útil aparece. Você fica com a sensação de que a floresta é o único caminho.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar à floresta</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Chegando ao rio, você encontra uma ponte velha, mas ela parece instável. Do outro lado, há uma caverna sombria.</p>
+            <button class="btn-proximo" data-proximo="5">Tentar atravessar a ponte</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a margem do rio</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Subindo pela colina, você chega a um antigo templo abandonado. No entanto, a entrada está bloqueada por uma porta de pedra pesada.</p>
+            <button class="btn-proximo" data-proximo="7">Tentar abrir a porta</button>
+            <button class="btn-proximo" data-proximo="8">Explorar os arredores</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você tenta atravessar a ponte, mas ela desaba bem no meio. Felizmente, você consegue se agarrar a uma rocha e voltar para a margem.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar a margem do rio</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Na margem do rio, você encontra uma caverna secreta escondida por vegetação. Ao entrar, você encontra uma antiga caixa de tesouro!</p>
+            <button class="btn-proximo" data-proximo="9">Abrir a caixa de tesouro</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>A porta de pedra do templo é pesada, mas você consegue abri-la com esforço. Lá dentro, você encontra um antigo altar. Mas onde está o tesouro?</p>
+            <button class="btn-proximo" data-proximo="10">Investigar o altar</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você explora os arredores do templo e encontra uma passagem secreta no chão. Ao descer, você chega a uma sala com um baú antigo.</p>
+            <button class="btn-proximo" data-proximo="9">Abrir o baú</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-tesouro.jpg" alt="encontrando o tesouro perdido">
+            <p>Você abre o baú ou a caixa e encontra o tesouro perdido! Ouro, pedras preciosas e artefatos antigos estão à sua frente. Sua jornada foi um sucesso!</p>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>No altar, você encontra uma chave antiga que pode abrir uma caverna secreta. Porém, a chave parece ser parte de um enigma mais complexo. Você precisa de mais pistas.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar à floresta e procurar mais pistas</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
